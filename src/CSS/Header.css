@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(192, 192, 192);
+}
+
+.leftMenu {
+  position: relative;
+  margin-left: 5rem;
+}
+.nuJooy {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  font-size: 30px;
+  color: white;
+}
+.rightMenu {
+  margin-right: 5rem;
+}
+li {
+  list-style: none;
+  display: inline;
+  margin-right: 2rem;
+  font-size: 20px;
+  color: white;
+}
+li:hover {
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
