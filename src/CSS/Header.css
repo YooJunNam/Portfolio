@@ -16,7 +16,11 @@
   color: white;
 }
 .rightMenu {
-  margin-right: 5rem;
+}
+@media (max-width: 1000px) {
+  .rightMenu ul li {
+    display: none;
+  }
 }
 li {
   list-style: none;
@@ -28,4 +32,42 @@ li {
 li:hover {
   border-bottom: 2px solid white;
   cursor: pointer;
+}
+
+* {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  height: auto;
+}
+
+.hamburgerMenu {
+  width: 50px;
+  display: none;
+  margin-right: 20px;
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  .hamburgerMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 300px) {
+  .hamburgerMenu {
+    display: block;
+  }
+}
+
+.mobileMenu {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(192, 192, 192);
+  display: none;
+}
+@media (max-width: 1000px) {
+  .mobileMenu {
+    display: none;
+  }
 }

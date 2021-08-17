@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+#fly-in {
+  font-size: 2em;
+  margin-left: 150px;
+  margin-bottom: 200px;
+  height: 410px;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  #fly-in {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  #fly-in {
+    margin-left: 60px;
+  }
+}
+
+#fly-in span {
+  display: block;
+  font-size: 0.4em;
+  opacity: 0.8;
+}
+
+#fly-in div {
+  margin: 3vh 0;
+  opacity: 0;
+  left: 10vw;
+  width: 80vw;
+  animation: switch 15s linear infinite;
+  justify-content: center;
+}
+
+#fly-in div:nth-child(2) {
+  animation-delay: 4s;
+}
+#fly-in div:nth-child(3) {
+  animation-delay: 7s;
+}
+#fly-in div:nth-child(4) {
+  animation-delay: 10s;
+}
+
+@keyframes switch {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+    transform: scale(3);
+  }
+  3% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+  10% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(0.9);
+  }
+  13% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(0.1);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

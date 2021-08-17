@@ -1,9 +1,13 @@
 import React from "react";
 import ourlegacy from "../Img/ourlegacy.png";
+import momentum from "../Img/Momentum2.PNG";
+import github from "../Img/github.png";
+import "../CSS/Skills.css";
+import portfolio from "../Pdf/portfolio.pdf";
 
 function Projects() {
   return (
-    <section>
+    <section style={{ marginBottom: "200px" }}>
       <div
         style={{
           textAlign: "center",
@@ -34,12 +38,27 @@ function Projects() {
             marginRight: "30px",
             marginLeft: "30px",
             boxShadow: "5px 5px 5px 5px gray",
+            height: "500px",
           }}
         >
-          <img width="300px" src={ourlegacy}></img>
-          <h3>ToDoList</h3>
-          <p>개인 프로젝트</p>
-          <p>바닐라 자바스크립트 활용</p>
+          <div style={{ margin: "30px" }}>
+            <img width="300px" height="200px" src={momentum}></img>
+          </div>
+          <div style={{ margin: "30px" }}>
+            <h3>ToDoList</h3>
+            <p>개인 프로젝트</p>
+            <p>바닐라 자바스크립트 활용</p>
+
+            <div style={{ textAlign: "center" }}>
+              <a style={{}} href="https://github.com/YooJunNam">
+                <img
+                  className="hoverImg"
+                  src={github}
+                  style={{ height: "40px", width: "40px" }}
+                />
+              </a>
+            </div>
+          </div>
         </div>
         <div
           style={{
@@ -47,12 +66,26 @@ function Projects() {
             marginRight: "30px",
             marginLeft: "30px",
             boxShadow: "5px 5px 5px 5px gray",
+            height: "500px",
           }}
         >
-          <img width="300px" src={ourlegacy}></img>
-          <h3>ToDoList</h3>
-          <p>개인 프로젝트</p>
-          <p>바닐라 자바스크립트 활용</p>
+          <div style={{ margin: "30px" }}>
+            <img width="300px" height="200px" src={ourlegacy}></img>
+          </div>
+          <div style={{ margin: "30px" }}>
+            <h3>Our legacy 쇼핑몰 클론</h3>
+            <p>협업 프로젝트</p>
+            <p>React framwork 활용</p>
+            <div style={{ textAlign: "center" }}>
+              <a style={{}} href="https://github.com/YooJunNam">
+                <img
+                  className="hoverImg"
+                  src={github}
+                  style={{ height: "40px", width: "40px" }}
+                />
+              </a>
+            </div>
+          </div>
         </div>
         <div
           style={{
@@ -60,13 +93,42 @@ function Projects() {
             marginRight: "30px",
             marginLeft: "30px",
             boxShadow: "5px 5px 5px 5px gray",
+            height: "500px",
           }}
         >
-          <img width="300px" src={ourlegacy}></img>
-          <h3>ToDoList</h3>
-          <p>개인 프로젝트</p>
-          <p>바닐라 자바스크립트 활용</p>
+          <div style={{ margin: "30px" }}>
+            <img width="300px" height="200px" src={momentum}></img>
+          </div>
+          <div style={{ margin: "30px" }}>
+            <h3>Protfolio Page</h3>
+            <p>개인 프로젝트</p>
+            <p>HTMl, CSS 위주 React</p>
+            <div style={{ textAlign: "center" }}>
+              <a style={{}} href="https://github.com/YooJunNam">
+                <img
+                  className="hoverImg"
+                  src={github}
+                  style={{ height: "40px", width: "40px" }}
+                />
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+      <div
+        style={{
+          textAlign: "center",
+          marginBottom: "30px",
+          marginTop: "30px",
+        }}
+      >
+        <button id="foot">
+          <button className="button-os">
+            <a calssName="more" href={portfolio} download>
+              more
+            </a>
+          </button>
+        </button>
       </div>
     </section>
   );
