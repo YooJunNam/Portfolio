@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import "../CSS/Header.css";
 import hamburger from "../Img/hamburger.jpg";
 
@@ -9,11 +8,12 @@ function Header() {
       <div
         className="container"
         style={{
-          width: "100%",
+          width: "100vw",
           position: "fixed",
           top: "0",
           left: "0",
           right: "0",
+          zIndex: 1000,
         }}
       >
         <div className="leftMenu">
