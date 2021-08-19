@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "../CSS/Header.css";
 import hamburger from "../Img/hamburger.jpg";
 
 function Header() {
+  const [mobileMenu, setMobileMenu] = useState(false);
   return (
     <>
       <div
@@ -38,7 +39,13 @@ function Header() {
             <li>
               <a>Contact</a>
             </li>
-            <div className="hamburgerMenu">
+            <div
+              className="hamburgerMenu"
+              onClick={() => {
+                setMobileMenu(true);
+              }}
+            >
+              {/* // (prevState) => !prevState) */}
               <img
                 style={{ width: "35px", height: "22px", pointer: "cursor" }}
                 src={hamburger}
@@ -48,48 +55,58 @@ function Header() {
           </ul>
         </div>
       </div>
-      <div className="mobileMenu">
-        <div
-          style={{
-            paddingTop: "100px",
-            paddingLeft: "100px",
-          }}
-        >
-          <span style={{ fontSize: "25px", color: "white", cursor: "pointer" }}>
-            About
-          </span>
+      {mobileMenu ? (
+        <div className="mobileMenu">
+          <div
+            style={{
+              paddingTop: "100px",
+              paddingLeft: "100px",
+            }}
+          >
+            <span
+              style={{ fontSize: "25px", color: "white", cursor: "pointer" }}
+            >
+              About
+            </span>
+          </div>
+          <div
+            style={{
+              paddingTop: "10px",
+              paddingLeft: "100px",
+            }}
+          >
+            <span
+              style={{ fontSize: "25px", color: "white", cursor: "pointer" }}
+            >
+              Skills
+            </span>
+          </div>
+          <div
+            style={{
+              paddingTop: "10px",
+              paddingLeft: "100px",
+            }}
+          >
+            <span
+              style={{ fontSize: "25px", color: "white", cursor: "pointer" }}
+            >
+              Projects
+            </span>
+          </div>
+          <div
+            style={{
+              paddingTop: "10px",
+              paddingLeft: "100px",
+            }}
+          >
+            <span
+              style={{ fontSize: "25px", color: "white", cursor: "pointer" }}
+            >
+              Contact
+            </span>
+          </div>
         </div>
-        <div
-          style={{
-            paddingTop: "10px",
-            paddingLeft: "100px",
-          }}
-        >
-          <span style={{ fontSize: "25px", color: "white", cursor: "pointer" }}>
-            Skills
-          </span>
-        </div>
-        <div
-          style={{
-            paddingTop: "10px",
-            paddingLeft: "100px",
-          }}
-        >
-          <span style={{ fontSize: "25px", color: "white", cursor: "pointer" }}>
-            Projects
-          </span>
-        </div>
-        <div
-          style={{
-            paddingTop: "10px",
-            paddingLeft: "100px",
-          }}
-        >
-          <span style={{ fontSize: "25px", color: "white", cursor: "pointer" }}>
-            Contact
-          </span>
-        </div>
-      </div>
+      ) : undefined}
     </>
   );
 }

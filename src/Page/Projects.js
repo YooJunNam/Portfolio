@@ -7,7 +7,7 @@ import portfolio from "../Pdf/portfolio.pdf";
 
 function Projects() {
   return (
-    <section style={{ marginBottom: "200px" }}>
+    <section id="sectionProjects">
       <div
         style={{
           textAlign: "center",
@@ -25,22 +25,8 @@ function Projects() {
         </h2>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          flex: "space-between",
-          justifyContent: "center",
-        }}
-      >
-        <div
-          style={{
-            border: "2px solid black",
-            marginRight: "30px",
-            marginLeft: "30px",
-            boxShadow: "5px 5px 5px 5px gray",
-            height: "500px",
-          }}
-        >
+      <div className="projectsContainer">
+        <div className="projectBox">
           <div style={{ margin: "30px" }}>
             <img width="300px" height="200px" src={momentum}></img>
           </div>
@@ -50,7 +36,7 @@ function Projects() {
             <p>바닐라 자바스크립트 활용</p>
 
             <div style={{ textAlign: "center" }}>
-              <a style={{}} href="https://github.com/YooJunNam">
+              <a href="https://github.com/YooJunNam">
                 <img
                   className="hoverImg"
                   src={github}
@@ -60,15 +46,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            border: "2px solid black",
-            marginRight: "30px",
-            marginLeft: "30px",
-            boxShadow: "5px 5px 5px 5px gray",
-            height: "500px",
-          }}
-        >
+        <div className="projectBox">
           <div style={{ margin: "30px" }}>
             <img width="300px" height="200px" src={ourlegacy}></img>
           </div>
@@ -87,15 +65,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            border: "2px solid black",
-            marginRight: "30px",
-            marginLeft: "30px",
-            boxShadow: "5px 5px 5px 5px gray",
-            height: "500px",
-          }}
-        >
+        <div className="projectBox">
           <div style={{ margin: "30px" }}>
             <img width="300px" height="200px" src={momentum}></img>
           </div>

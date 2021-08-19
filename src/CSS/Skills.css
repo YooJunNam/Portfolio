@@ -90,3 +90,33 @@ button:hover {
   letter-spacing: 5px;
   color: white;
 }
+
+/* project CSS */
+
+#sectionProjects {
+  margin-bottom: 200px;
+}
+
+.projectsContainer {
+  display: flex;
+  flex: space-between;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .projectsContainer {
+    display: block;
+  }
+  .projectBox {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+.projectBox {
+  border: 2px solid black;
+  margin-right: 30px;
+  margin-left: 30px;
+  box-shadow: 5px 5px 5px 5px gray;
+  height: 500px;
+}

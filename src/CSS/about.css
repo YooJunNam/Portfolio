@@ -1,3 +1,11 @@
+#sectionAbout {
+  padding-top: 40px;
+  padding-left: 20px;
+
+  border-top: 5px solid #f5f5f5;
+  background-color: #f5f5f5;
+}
+
 .myImage {
   width: 20%;
 }
@@ -5,10 +13,27 @@
 .aboutMe {
   margin-left: 100px;
   width: 100%;
+  margin-bottom: 60px;
+}
+
+.myProfile {
+  display: flex;
+  flex: space-between;
 }
 
 @media (max-width: 1000px) {
-  #sectionAbout .myProfile {
+  #sectionAbout {
+    padding: 0px;
+  }
+  .myProfile {
     display: block;
+  }
+  .myImage {
+    width: 100%;
+    text-align: center;
+  }
+  .aboutMe {
+    text-align: center;
+    margin: 0;
   }
 }

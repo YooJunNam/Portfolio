@@ -1,10 +1,10 @@
 import React from "react";
 import "../CSS/Home.css";
 
-function Home({ inputToFocus }) {
+function Home() {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
-      <section id="fly-in" ref={inputToFocus}>
+      <section id="fly-in">
         <div>
           <div>
             Hello
