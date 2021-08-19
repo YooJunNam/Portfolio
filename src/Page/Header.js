@@ -42,10 +42,9 @@ function Header() {
             <div
               className="hamburgerMenu"
               onClick={() => {
-                setMobileMenu(true);
+                setMobileMenu((prevState) => !prevState);
               }}
             >
-              {/* // (prevState) => !prevState) */}
               <img
                 style={{ width: "35px", height: "22px", pointer: "cursor" }}
                 src={hamburger}
@@ -56,13 +55,16 @@ function Header() {
         </div>
       </div>
       {mobileMenu ? (
-        <div className="mobileMenu">
-          <div
-            style={{
-              paddingTop: "100px",
-              paddingLeft: "100px",
-            }}
-          >
+        <div
+          className="mobileMenu"
+          style={{
+            position: "fixed",
+            left: "px",
+            top: "55px",
+            height: "220px",
+          }}
+        >
+          <div style={{ paddingTop: "10px", paddingLeft: "100px" }}>
             <span
               style={{ fontSize: "25px", color: "white", cursor: "pointer" }}
             >
