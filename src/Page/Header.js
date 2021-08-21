@@ -30,14 +30,14 @@ function Header() {
               <a href="#sectionAbout">About</a>
             </li>
             <li>
-              <a>Skills</a>
+              <a href="#sectionSkills">Skills</a>
             </li>
 
             <li>
-              <a>Projects</a>
+              <a href="#sectionProjects">Projects</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a href="#sectionContacts">Contact</a>
             </li>
             <div
               className="hamburgerMenu"
@@ -62,13 +62,21 @@ function Header() {
             left: "px",
             top: "55px",
             height: "220px",
+            zIndex: "1000",
           }}
         >
           <div style={{ paddingTop: "10px", paddingLeft: "100px" }}>
             <span
               style={{ fontSize: "25px", color: "white", cursor: "pointer" }}
             >
-              About
+              <a
+                href="#sectionAbout"
+                onClick={() => {
+                  setMobileMenu(false);
+                }}
+              >
+                About
+              </a>
             </span>
           </div>
           <div
@@ -80,7 +88,15 @@ function Header() {
             <span
               style={{ fontSize: "25px", color: "white", cursor: "pointer" }}
             >
-              Skills
+              {" "}
+              <a
+                href="#sectionSkills"
+                onClick={() => {
+                  setMobileMenu(false);
+                }}
+              >
+                Skills
+              </a>
             </span>
           </div>
           <div
@@ -92,7 +108,14 @@ function Header() {
             <span
               style={{ fontSize: "25px", color: "white", cursor: "pointer" }}
             >
-              Projects
+              <a
+                href="#sectionProjects"
+                onClick={() => {
+                  setMobileMenu(false);
+                }}
+              >
+                Projects
+              </a>
             </span>
           </div>
           <div
@@ -104,7 +127,14 @@ function Header() {
             <span
               style={{ fontSize: "25px", color: "white", cursor: "pointer" }}
             >
-              Contact
+              <a
+                href="#sectionContacts"
+                onClick={() => {
+                  setMobileMenu(false);
+                }}
+              >
+                Contact
+              </a>
             </span>
           </div>
         </div>

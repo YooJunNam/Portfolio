@@ -4,7 +4,10 @@ import "../CSS/Skills.css";
 function Skills() {
   return (
     <>
-      <section style={{ marginTop: "100px", marginBottom: "100px" }}>
+      <section
+        id="sectionSkills"
+        style={{ paddingTop: "50px", marginBottom: "100px" }}
+      >
         <div
           style={{
             textAlign: "center",

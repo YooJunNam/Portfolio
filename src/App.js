@@ -9,7 +9,7 @@ import Projects from "./Page/Projects";
 import Skills from "./Page/Skills";
 
 function App() {
-  const scrollAboutBtn = useRef();
+  const scrollAboutBtn = useRef([]);
 
   return (
     <>

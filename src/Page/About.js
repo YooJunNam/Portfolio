@@ -5,7 +5,7 @@ import "../CSS/about.css";
 
 function About() {
   return (
-    <section id="sectionAbout">
+    <section id="sectionAbout" style={{ paddingTop: "50px" }}>
       <h2
         style={{
           color: "rgba(142,142,142)",
@@ -23,7 +23,7 @@ function About() {
             style={{
               borderRadius: "300px",
               height: "400px",
-              marginTop: "50px",
+              marginTop: "10px",
             }}
           ></img>
         </div>

@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 .App {
   text-align: center;
 }
@@ -10,4 +12,10 @@ html {
 
 body {
   overflow-x: hidden;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }

@@ -7,7 +7,7 @@ import portfolio from "../Pdf/portfolio.pdf";
 
 function Projects() {
   return (
-    <section id="sectionProjects">
+    <section id="sectionProjects" style={{ paddingTop: "50px" }}>
       <div
         style={{
           textAlign: "center",
@@ -33,7 +33,7 @@ function Projects() {
           <div style={{ margin: "30px" }}>
             <h3>ToDoList</h3>
             <p>개인 프로젝트</p>
-            <p>바닐라 자바스크립트 활용</p>
+            <p>사용 언어: 바닐라 자바스크립트</p>
 
             <div style={{ textAlign: "center" }}>
               <a href="https://github.com/YooJunNam">
@@ -53,7 +53,7 @@ function Projects() {
           <div style={{ margin: "30px" }}>
             <h3>Our legacy 쇼핑몰 클론</h3>
             <p>협업 프로젝트</p>
-            <p>React framwork 활용</p>
+            <p>사용 언어 : HTML, CSS , React framwork 활용</p>
             <div style={{ textAlign: "center" }}>
               <a style={{}} href="https://github.com/YooJunNam">
                 <img
@@ -72,7 +72,7 @@ function Projects() {
           <div style={{ margin: "30px" }}>
             <h3>Protfolio Page</h3>
             <p>개인 프로젝트</p>
-            <p>HTMl, CSS 위주 React</p>
+            <p>사용 언어 : HTMl, CSS 위주 React</p>
             <div style={{ textAlign: "center" }}>
               <a style={{}} href="https://github.com/YooJunNam">
                 <img

@@ -3,7 +3,13 @@ import "../CSS/Home.css";
 
 function Home() {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        paddingBottom: "100px",
+      }}
+    >
       <section id="fly-in">
         <div>
           <div>

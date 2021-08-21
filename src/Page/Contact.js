@@ -6,7 +6,10 @@ import github from "../Img/github.png";
 
 function Contact() {
   return (
-    <section style={{ height: "200px", backgroundColor: "rgba(204,153,204)" }}>
+    <section
+      id="sectionContacts"
+      style={{ height: "200px", backgroundColor: "rgba(204,153,204)" }}
+    >
       <div
         style={{
           textAlign: "center",
