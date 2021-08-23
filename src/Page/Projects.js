@@ -104,7 +104,7 @@ function Projects() {
             />
           </a>
         </div>
-        <div className="projectGitLink">
+        <div className="projectGitLink leftProjectGit">
           <a style={{}} href="https://github.com/YooJunNam/ourlegacy">
             <img
               className="hoverImg"
@@ -114,7 +114,7 @@ function Projects() {
           </a>
         </div>
 
-        <div className="projectGitLink">
+        <div className="projectGitLink rightProjectGit">
           <a style={{}} href="https://github.com/YooJunNam">
             <img
               className="hoverImg"

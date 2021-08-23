@@ -123,10 +123,11 @@ button:hover {
 
 .projectGitLinkContainer {
   display: flex;
+  justify-content: center;
 }
 .projectGitLink {
-  flex: 1;
   text-align: center;
+  width: 445px;
 }
 
 .MobileProjectGitLink {
