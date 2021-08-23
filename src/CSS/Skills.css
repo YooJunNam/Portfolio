@@ -120,3 +120,25 @@ button:hover {
   box-shadow: 5px 5px 5px 5px gray;
   height: 500px;
 }
+
+.projectGitLinkContainer {
+  display: flex;
+}
+.projectGitLink {
+  flex: 1;
+  text-align: center;
+}
+
+.MobileProjectGitLink {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .projectGitLinkContainer {
+    display: none;
+  }
+  .MobileProjectGitLink {
+    display: block;
+    text-align: center;
+  }
+}
