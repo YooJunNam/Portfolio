@@ -7,20 +7,29 @@
 }
 
 .myImage {
-  width: 20%;
+  width: 40%;
 }
 
 .aboutMe {
   margin-left: 100px;
   width: 100%;
-  margin-bottom: 60px;
 }
 
 .myProfile {
   display: flex;
-  flex: space-between;
+  padding: 0 0 60px;
 }
 
+.myProfileWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  .myProfile {
+    width: 1000px;
+  }
+}
 @media (max-width: 1000px) {
   #sectionAbout {
     padding: 0px;
@@ -31,6 +40,7 @@
   .myImage {
     width: 100%;
     text-align: center;
+    padding: 2rem 0;
   }
   .aboutMe {
     text-align: center;
